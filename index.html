@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gopi">
+        <meta name="role" content="developer">
+        <title>My First Page</title>
+        <link rel="icon" href="Images/webicon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <!--Comments-->
+            <section>
+                <h1>Header 1</h1>
+                    <h2>Header 2.... and so on till h6</h2>
+                    <p>paragragh <br>
+                    <em>em</em> <br>
+                    <strong>strong</strong></p>
+                    <p>br for line break <br> hr for line</p>
+            </section>
+        <hr>
+        </header>
+        <main>
+            <article>
+                <section id="entities">
+                    <h2>Entities</h2>
+                        <p> &amp;nbsp;&nbsp;&nbsp;&nbsp;non breaking space. <br> &amp;lt; - &lt; - lesser than 
+                        <br> &amp;gt; - &gt; - greater than
+                        <br> &amp;copy; - &copy; - copy</p> <hr>
+                        <Address>Address</Address><p> - specially for mention address</p>
+                        <p><abbr title="Mozilla Developer Network">MDN</abbr> - using abbr tag</p>
+                </section>
+                <hr>
+                <section id="list">
+                    <h2>List</h2>
+                    <h4>Ordered List ol, li</h4>
+                        <ol>
+                            <li>One</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                    <h4>Unordered List ul, li</h4>
+                        <ul>
+                            <li>Chennai</li>
+                            <li>Coimbatore</li>
+                            <li>Salem</li>
+                        </ul>
+                    <h4>Description List dl, dt, dd</h4>
+                        <dl>
+                            <dt>Description Title 1</dt>
+                            <dd>Description Details 1</dd>
+                            <dt>Description Title 2</dt>
+                            <dd>Description Details 2</dd>
+                        </dl>
+                </section>
+                <hr>   
+                <section id="link">
+                    <h2>Link Basics a tag - anchor tag</h2>
+                    <h4>absolute reference - online websites</h4>
+                        <a href="https://developer.mozilla.org/en-US/">MDN Website</a>
+                    <h4>relative reference</h4>
+                        <p>As like we have used in head tag to link css and js files</p>
+                    <h4>Internal reference a using href="#id" based on section</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Top</a></li>
+                                <li><a href="#entities">Entities</a></li>
+                                <li><a href="#list">List</a></li>
+                            </ul>
+                        </nav>
+                </section>  
+                <hr>
+                <section id="image">
+                    <h2>Images</h2>
+                    <p>img -> src, alt, title, width, height, loading</p>
+                        <img src="Images/bike.webp" alt="bike" title="retro bike" width="320px" height="160px" loading="lazy">
+                    <p>figure -> figCaption</p>
+                    <figure>
+                        <img src="Images/nature.jpeg" alt="mountain" title="snow mountain" width="320px" height="160px" loading="lazy">
+                        <figCaption>figCaption - The Himalayas</figCaption>
+                    </figure>
+                    <figure>
+                        <figCaption>figCaption - Here the HTML Code</figCaption>
+                        <code>&lt;h1&gt; Hello World &lt;h1&gt;</code>
+                    </figure>
+                </section>
+                <hr>
+                <section id="table">
+                    <h2>Table</h2>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>8am-11am</td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Break</th>
+                                <td>11am-12pm</td>
+                                <td>Lunch break</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>12pm-6pm</td>
+                                <td>Study Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Time</td>
+                                <td>Free time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>sleep</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Eat, Sleep and Code Everyday</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <h2 id="form">Form</h2>
+                    <form action="https://httpbin.org/get" method="get">
+                        <fieldset>
+                            <legend>Legend</legend>
+                            <p>
+                                <label for="firstName">First Name:</label>
+                                <input type="text" name="firstName" id="firstName"  placeholder="text" autocomplete="on" required>
+                            </p>
+                            <p>
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" name="lastName" id="lastName" placeholder="text" autocomplete="on" required>
+                            </p>
+                            <p>
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password" placeholder="password" required>
+                            </p>
+                            <p>
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="tel -> pattern" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                            </p>
+                            <p>
+                                <label for="year">Decade Year:</label>
+                                <input type="number" name="year" id="year" min="1950" max="2020" step="10" value="1990">
+                            </p>
+                            <p>
+                                <label for="select"> Courses :</label>
+                                <select name="select" id="select" multiple size="3">
+                                    <optgroup label="Frontend">
+                                        <option value="HTML">HTML</option>
+                                        <option value="CSS">CSS</option>
+                                        <option value="JavaScript">JavaScript</option>
+                                        <option value="React" selected>React</option>
+                                    </optgroup>
+                                    <optgroup label="Backend">
+                                        <option value="NodeJS">NodeJS</option>
+                                        <option value="ExpessJS">ExpessJS</option>
+                                        <option value="Django">Django</option>
+                                    </optgroup>
+                                    <optgroup label="other">
+                                        <option value="Editing">Editing</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Radio Button</legend>
+                            <input type="radio" name="button1" id="button1" value="button1">
+                            <label for="button1">button1</label>
+                            <input type="radio" name="button2" id="button2" value="button2">
+                            <label for="button2">button2</label>
+                            <input type="radio" name="button3" id="button3" value="button3">
+                            <label for="button3">button3</label><br>
+                            <p>*We can also use checkbox type for multiple select</p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Message</legend>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                        <button type="reset">Reset</button>
+
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <br><br><br><br>
+            <p>Copyright &copy;1999</p>
+            <br><br>
+        </footer>
+
+    </body>
+</html>
