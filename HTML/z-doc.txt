@@ -1,0 +1,28 @@
+
+<!--comment-->
+hr tag - for line break
+inline element 
+    em emphasized tag - styled in italic
+    strong tag - bold the text
+block element
+entities
+    &nbsp; - space
+    &lt; - <
+    &copy; - @
+    &gt; - >
+address tag - specific for address
+links using webpage url - absolute reference
+links using in head tag - relative reference
+link internally using section and id - internal reference
+href="#id" for top href=""
+
+img - src, alt, title, width, height, loading
+
+network- disable cache - filter.img
+
+figure - figCaption.... we can use for img, code ... 
+
+website for ref- loremipsum, unsplash, pexels, gratisography, pixaby
+compress - tinypng, canvas, irfanview
+
+/// ol - start, reversed
